@@ -4,8 +4,14 @@
   "main": "server/index.js",
   "repository": "https://github.com/YWHo/passport-practice.git",
   "author": "YWHo <YWHo@users.noreply.github.com>",
-  "license": "none",
+  "license": null,
   "private": true,
+  "scripts": {
+    "knex": "knex",
+    "dev": "nodemon --watch server & webpack --watch",
+    "start": "node server & webpack --watch",
+    "test": "jest --watchAll"
+  },
   "babel": {
     "presets": [
       "env",
